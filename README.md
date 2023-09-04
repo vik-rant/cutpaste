@@ -1,3 +1,5 @@
+[![PyPI version](https://badge.fury.io/py/cutpaste.svg)](https://badge.fury.io/py/cutpaste)
+
 # cutpaste
 cut and paste with multi-char delimiters
 
