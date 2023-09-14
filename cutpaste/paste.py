@@ -4,13 +4,13 @@ import os
 import sys
 import argparse
 
+from cutpaste import utils
 from cutpaste.version import version
 
 
 def main():
-    p = argparse.ArgumentParser('pypaste')
-    p.add_argument('-V', '--version', action='version', version='%(prog)s ' + version)
-    args = p.parse_args()
+    args = utils.parse_args('pypaste')
+    print(args)
 
 
 if __name__ == '__main__':
