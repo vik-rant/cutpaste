@@ -1,0 +1,26 @@
+[project]
+name = "cutpaste"
+dynamic = ["version"]
+description = "Unix-like cut and paste commands with multi-character delimiter support"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/vik-rant/cutpaste"
+
+[project.scripts]
+pycut = "cutpaste.cut:main"
+pypaste = "cutpaste.paste:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.dynamic]
+version = {attr = "cutpaste.version.version"}
