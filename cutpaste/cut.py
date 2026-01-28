@@ -9,7 +9,7 @@ def main():
     Cut
     """
     args = utils.parse_args("pycut")
-    print(args)
+    # print(args)
 
 
 if __name__ == "__main__":
